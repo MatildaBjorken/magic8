@@ -107,3 +107,42 @@ img{
     transform: translate3d(5px, 0, 0);
   }
 }
+
+@media only screen and (max-width: 600px) {
+    .ball {
+      
+        width: 20em;
+        height: 20em;
+        
+      }
+      .hole {
+        position: relative;
+        height: 150px;
+        width: 150px;
+        
+      }
+      .message-holder {
+
+        margin-top: 33px;
+        margin-left: 15px;
+        width: 0; 
+        height: 0; 
+        border-left: 60px solid transparent;
+        border-right: 60px solid transparent;  
+        border-top: 115px solid #000000;
+        transition: opacity 2s ease-in-out;
+      }
+      #message {
+        color: white;
+        font-size: 17px;
+        text-align: center;
+        margin: 40px auto;
+        width: 50%;
+        transition: opacity 2.5s ease-in;
+      }
+
+      .image{
+        background-image: url(./askme-small.png);
+        background-size: cover;
+    }
+}
